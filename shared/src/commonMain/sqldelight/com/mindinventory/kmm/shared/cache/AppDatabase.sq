@@ -1,0 +1,25 @@
+CREATE TABLE Employee (
+    id INTEGER NOT NULL,
+    employee_name TEXT NOT NULL,
+    employee_salary INTEGER AS Int NOT NULL DEFAULT 0,
+    employee_age TEXT NOT NULL DEFAULT 0,
+    profile_image TEXT NOT NULL
+);
+
+insertLaunch:
+INSERT INTO Employee(id, employee_name, employee_salary, employee_age, profile_image)
+VALUES(?, ?, ?, ?, ?);
+
+selectEmployeeByName:
+SELECT * FROM Employee
+WHERE employee_name = ?;
+
+selectEmployeeByID:
+SELECT * FROM Employee
+WHERE id = ?;
+
+selectAllEmployee:
+SELECT * FROM Employee;
+
+deleteAllEmployee:
+DELETE FROM Employee;
