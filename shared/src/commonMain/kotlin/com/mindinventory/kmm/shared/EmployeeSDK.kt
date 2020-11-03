@@ -5,6 +5,7 @@ import com.mindinventory.kmm.shared.cache.DatabaseDriverFactory
 import com.mindinventory.kmm.shared.entity.EmployeeDataItem
 import com.mindinventory.kmm.shared.network.EmployeeApi
 
+// this is the main class to interact with your shared module code
 class EmployeeSDK(databaseDriverFactory: DatabaseDriverFactory) {
     private val database = Database(databaseDriverFactory)
     private val api = EmployeeApi()

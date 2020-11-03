@@ -1,0 +1,1 @@
+"AppDatabase.sq" file contains all the queries regarding your database transactions

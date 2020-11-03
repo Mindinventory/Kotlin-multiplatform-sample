@@ -3,6 +3,8 @@ package com.mindinventory.kmm.shared.entity
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+// models according to API response
+
 @Serializable
 data class Employee(
 

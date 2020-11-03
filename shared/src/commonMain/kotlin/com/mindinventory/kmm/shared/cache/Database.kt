@@ -3,6 +3,7 @@ package com.mindinventory.kmm.shared.cache
 import com.mindinventory.kmm.shared.entity.EmployeeDataItem
 
 internal class Database(databaseDriverFactory: DatabaseDriverFactory) {
+    // initialising database
     private val database = AppDatabase(databaseDriverFactory.createDriver())
     private val dbQuery = database.appDatabaseQueries
 

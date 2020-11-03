@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityMainBinding
     private val mainScope = MainScope()
+    // Initialising native SqlDriver
     private val sdk = EmployeeSDK(DatabaseDriverFactory(this))
     private val adapter = EmployeeAdapter(listOf())
 
@@ -38,11 +39,14 @@ class MainActivity : AppCompatActivity() {
             mBinding.progressBar.isVisible = true
         mainScope.launch {
             kotlin.runCatching {
+                // calling shared module code feature which provides employees data
                 sdk.getLaunches(needReload)
             }.onSuccess {
+                // handle success
                 adapter.launches = it
                 adapter.notifyDataSetChanged()
             }.onFailure {
+                // handle exceptions
                 Toast.makeText(this@MainActivity, it.localizedMessage, Toast.LENGTH_SHORT).show()
             }
             mBinding.progressBar.isVisible = false

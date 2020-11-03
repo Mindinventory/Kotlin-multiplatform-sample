@@ -36,8 +36,9 @@ kotlin {
             dependencies{
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
-                implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+                // it is expected interfaces
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("com.squareup.sqldelight:runtime:$sqlDelightVersion")
             }
         }
@@ -50,6 +51,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("com.google.android.material:material:1.2.1")
+                // it is actual platform implementations
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
                 implementation("com.squareup.sqldelight:android-driver:$sqlDelightVersion")
             }
@@ -62,6 +64,7 @@ kotlin {
         }
         val iosMain by getting{
             dependencies{
+                // it is actual platform implementations
                 implementation("io.ktor:ktor-client-ios:$ktorVersion")
                 implementation("com.squareup.sqldelight:native-driver:$sqlDelightVersion")
             }
@@ -85,6 +88,7 @@ android {
     }
 }
 sqldelight {
+    // database configuration
     database("AppDatabase") {
         packageName = "com.mindinventory.kmm.shared.cache"
     }
