@@ -4,7 +4,7 @@ Kotlin Multiplatform Mobile which is also called “KMM” help us to write a si
 This repositary is the code with corresponding to the network call and offline data-storage.
 
 ### Preview
-![image](/media/kotlin-multiplaform-mobile.gif)   ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
+![image](/media/kotlin-multiplaform-mobile.gif) ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
 
 ### Requirements
 
