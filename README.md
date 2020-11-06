@@ -3,8 +3,12 @@
 Kotlin Multiplatform Mobile which is also called “KMM” help us to write a single code in pure Kotlin and can use it in both Android and iOS application.
 This repositary is the code with corresponding to the network call and offline data-storage.
 
+# Documentation 
+
+You can find more detailed information for ![KMM here.](https://medium.com/mindful-engineering/getting-started-with-kotlin-multiplatform-part-1-working-with-mobile-platforms-1fd76ce2f055).
+
 ### Preview
-![image](/media/kotlin-multiplaform-mobile.gif) ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
+![image](/media/kotlin-multiplaform-mobile.gif) &nbsp; ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
 
 ### Requirements
 
