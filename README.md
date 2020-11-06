@@ -5,7 +5,7 @@ This repositary is the code with corresponding to the network call and offline d
 
 # Documentation 
 
-You can find more detailed information for ![KMM here.](https://medium.com/mindful-engineering/getting-started-with-kotlin-multiplatform-part-1-working-with-mobile-platforms-1fd76ce2f055).
+You can find more detailed information for [KMM here.](https://medium.com/mindful-engineering/getting-started-with-kotlin-multiplatform-part-1-working-with-mobile-platforms-1fd76ce2f055)
 
 ### Preview
 ![image](/media/kotlin-multiplaform-mobile.gif) &nbsp; ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
