@@ -5,6 +5,7 @@ This repositary is the code with corresponding to the network call and offline d
 
 ### Preview
 ![image](/media/kotlin-multiplaform-mobile.gif)
+
 ![image](/media/kotlin-multiplaform-mobile-iOS.gif)
 
 ### Requirements
