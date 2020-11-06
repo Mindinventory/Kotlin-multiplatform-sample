@@ -14,7 +14,7 @@ This repositary is the code with corresponding to the network call and offline d
 
 # Blog post 
 
-You can find more detailed information for [KMM here.](https://medium.com/mindful-engineering/getting-started-with-kotlin-multiplatform-part-1-working-with-mobile-platforms-1fd76ce2f055)
+https://medium.com/mindful-engineering/getting-started-with-kotlin-multiplatform-part-1-working-with-mobile-platforms-1fd76ce2f055
 
 # LICENSE!
 
