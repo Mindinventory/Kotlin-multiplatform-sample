@@ -11,7 +11,7 @@ class EmployeeSDK(databaseDriverFactory: DatabaseDriverFactory) {
     private val api = EmployeeApi()
 
     @Throws(Exception::class)
-    suspend fun getLaunches(forceReload: Boolean): List<EmployeeDataItem> {
+    suspend fun getEmployees(forceReload: Boolean): List<EmployeeDataItem> {
         val cachedEmployee = database.getAllEmployee()
         return if (cachedEmployee.isNotEmpty() && !forceReload) {
             cachedEmployee

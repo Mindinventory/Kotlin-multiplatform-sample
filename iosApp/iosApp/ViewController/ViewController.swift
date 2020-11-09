@@ -112,7 +112,7 @@ extension ViewController {
             activityIndicator.startAnimating()
         }
         
-        sdk.getLaunches(forceReload: forceReload) { (employees, error) in       
+        sdk.getEmployees(forceReload: forceReload) { (employees, error) in
             
             self.activityIndicator.stopAnimating()
             self.refreshContol.endRefreshing()

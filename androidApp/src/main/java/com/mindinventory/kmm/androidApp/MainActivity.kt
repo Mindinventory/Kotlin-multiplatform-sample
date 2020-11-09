@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         mainScope.launch {
             kotlin.runCatching {
                 // calling shared module code feature which provides employees data
-                sdk.getLaunches(needReload)
+                sdk.getEmployees(needReload)
             }.onSuccess {
                 // handle success
                 adapter.launches = it
